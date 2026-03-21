@@ -1,12 +1,10 @@
 body {
     background-color: white;    
     margin: 0;
-    height: 100vh; /* Altura total de la pantalla */
+    min-height: 100vh; /* Altura total de la pantalla */
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center;     /* Centra verticalmente */
-
-    overflow: hidden;
 }
 
 .container {

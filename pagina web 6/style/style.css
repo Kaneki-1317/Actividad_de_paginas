@@ -1,17 +1,14 @@
 body {
     background-color: white;    
-    margin: 0;
+    margin: 0px;
     height: 100vh; /* Altura total de la pantalla */
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center;     /* Centra verticalmente */
-    margin-top: 130px;
-    overflow: hidden;
+    margin-top: 150px;
 }
 
 .container {
-    width: 1500px;
-    height: 1000px;
     display: flex;
 }
 
