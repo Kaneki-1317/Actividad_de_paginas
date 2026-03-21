@@ -56,11 +56,7 @@ El objetivo es mejorar habilidades en **HTML, CSS y diseño responsivo**, aplica
  ┣ 📂 pagina22
  ┣ 📂 pagina23
  ┣ 📂 pagina24
- ┣ 📂 pagina25
- ┣ 📂 css
- ┃ ┗ styles.css
- ┣ 📂 img
- ┗ index.html
+ ┗ 📂 pagina25
 ```
 
 ---
