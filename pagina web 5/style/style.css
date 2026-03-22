@@ -1,17 +1,27 @@
-body {
-    background-color: white;    
+*{
     margin: 0;
-    height: 100vh; /* Altura total de la pantalla */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(0, 0, 0);    
+    font-family: 'Segoe UI', sans-serif;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
 
 .container {
     background-color: rgb(240, 240, 240);
-    width: 1500px;
-    height: 1000px;
-
+    width: 100%;
+    height: 40%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
 }
 
 .parte-superior{
@@ -21,34 +31,154 @@ body {
 }
 
 .parte-inferior{
-    margin-top: -50px;
+    margin-top: -35px;
     height: 60%;
 
     display: flex; /* Las cajas estarán en fila */
-    justify-content: space-between; /* Espacio entre ellas */
     align-items: center; /* Centrado vertical */
-    padding: 20px; /* Espacio interno */
+    padding: 5px; /* Espacio interno */
+    gap: 5.4rem;
 }
 
 h1{
-
-    width: 500px;
-    font-size: 80px;
+    width: 200px;
+    font-size: 1.5rem;
 }
 
 h3{
-    font-size: 35px;
+    font-size: 0.5rem;
     color: rgb(109, 109, 109);
 }
 
 p{
 
-    width: 395px;
-    font-size: 25px;
+    width: 100px;
+    font-size: 0.4rem;
 }
 .caja{
-    width: 30%; /* ajusta según necesidad */
-    height: 80%; /* altura relativa a parte-inferior */
-    width: 30%;
-    height: 80%;
+    width: 10%; /* ajusta según necesidad */
+    height: 20%; /* altura relativa a parte-inferior */
+}
+
+img{
+    width: 100px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 500px;
+        height: 70%;
+    }
+
+    .parte-superior {
+        padding: 30px;
+    }
+
+    .parte-inferior {
+        margin-top: -50px;
+        gap: 7.75rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        width: 250px;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    p {
+        font-size: 0.6rem;
+        width: 150px;
+    }
+
+    img {
+        width: 140px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 700px;
+        height: 80%;
+    }
+
+    .parte-inferior {
+        margin-top: -90px;
+        padding: 30px;
+        gap: 9.7rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        width: 200px;
+    }
+
+    img {
+        width: 180px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .container {
+        max-width: 900px;
+        height: 90%;
+    }
+
+    .parte-inferior {
+        gap: 14rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        width: 450px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        width: 250px;
+    }
+
+    img {
+        width: 220px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1000px;
+        height: 100%;
+    }
+
+    .parte-inferior {
+        margin-top: -120px;
+        padding: 35px;
+        gap: 15rem;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+        width: 300px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    img {
+        width: 250px;
+    }
 }

@@ -1,31 +1,47 @@
-body {
-    background-color: white;    
-    margin: 0px;
-    height: 100vh; /* Altura total de la pantalla */
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente */
-    margin-top: 150px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
+body {
+    background-color: rgb(0, 0, 0);    
+    font-family: 'Segoe UI', sans-serif;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 1px;
+}
+
+.circulo img{
+    margin: 15px;
+    width: 25px;
+    height: auto;
+    margin-bottom: -10px;
 }
 
 h1{
-    margin: 15px;
-    margin-top: 15px;
-    font-size: 70px;
-    width: 680px;
+    padding: 15px;
+    font-size: 1rem;
+    width: 195px;
+    margin-bottom: -20px;
 }
-p{
-    margin: 5px;
-    width: 100px;
-}
+
 .Lorem{
     margin: 15px;
-    font-size: 30px;
-    width: 640px;
+    font-size: 0.5rem;
+    width: 150px;
+    margin-bottom: -5px;
 }
 
 a{
@@ -33,45 +49,54 @@ a{
     margin: 15px;
 }
 
-.link{
-    margin-top: 50px;
-}
-
-.border{
-    margin-top: 80px;
-}
-
-
 .hola{
     margin: 15px;
-    border: 2px solid black;
+    border: 1px solid black;
     display: flex;
-    border-radius: 15px;
-    gap: 15px;
-    width: 590px;
-    height: 100px;
+    border-radius: 5px;
+    width: 150px;
+    height: 32px;
 }
 
 .margin{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hola p{
+    font-size: 0.3rem;
+}
+
+.hola img{
+    width: 6px;
+}
+
+.link{
     margin: 15px;
+}
+
+.link a{
+    margin: 0;
 }
 
 .boton1{
     text-decoration: none;
-    font-size: 30px;
+    font-size: 0.35rem;
     background-color: rgb(41, 41, 41);
     color: white;
-    padding: 12px 24px;
-    border-radius: 10px;
+    padding: 6px 6px;
+    border-radius: 5px;
 }
 
 .boton2{
     text-decoration: none;
-    font-size: 30px;
+    font-size: 0.35rem;
     background-color: rgb(226, 226, 226);
     color: rgb(7, 7, 7);
-    padding: 12px 24px;
-    border-radius: 10px;
+    padding: 6px 6px;
+    border-radius: 5px;
 }
 
 .boton1:hover{
@@ -80,4 +105,192 @@ a{
 
 .boton2:hover{
     background-color: rgb(207, 207, 207)
+}
+
+.texto{
+    width: 180px;
+}
+
+.container-img{
+    margin-top: 20px;
+}
+
+.img-i{
+    width: 170px;
+    height: auto;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        height: 80%;
+        gap: 10px;
+    }
+
+    .texto{
+        margin: 0 20px;
+        width: 350px;
+    }
+
+    .circulo img{
+        width: 55px;
+        height: auto;
+    }
+
+    h1{
+        font-size: 1.8rem;
+        width: auto;
+    }
+
+    .Lorem{
+        font-size: 0.9rem;
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .boton1,
+    .boton2{
+        font-size: 0.7rem;
+        padding: 8px 12px;
+    }
+
+    .link{
+        margin-bottom: 25px;
+    }
+
+    .hola{
+        width: 300px;
+        height: auto;
+        gap: 10px;
+    }
+
+    .hola p{
+        font-size: 0.6rem;
+    }
+
+    .hola img{
+        width: 12px;
+    }
+
+    .img-i{
+        width: 330px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 80%;
+        height: 90%;
+        gap: 20px;
+    }
+
+    .texto{
+        margin: 0 40px;
+        width: 500px;
+    }
+
+    .circulo img{
+        width: 75px;
+        height: auto;
+    }
+
+    h1{
+        font-size: 2.5rem;
+        width: 500px;
+    }
+
+    .Lorem{
+        font-size: 1.2rem;
+        width: 450px;
+        margin-bottom: 25px;
+    }
+
+    .boton1,
+    .boton2{
+        font-size: 0.9rem;
+        padding: 10px 25px;
+    }
+
+    .link{
+        margin-bottom: 50px;
+    }
+
+    .hola{
+        width: 380px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .hola p{
+        font-size: 0.8rem;
+    }
+
+    .img-i{
+        width: 420px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .container {
+        height: 100%;
+        width: 85%;
+        gap: 40px;
+    }
+
+    .texto{
+        width: 500px;
+    }
+
+    h1{
+        font-size: 2.8rem;
+    }
+
+    .Lorem{
+        font-size: 1.1rem;
+        width: 350px;
+        margin-bottom: 35px;
+
+    }
+
+    .link{
+        margin-bottom: 60px;
+    }
+
+    .hola{
+        width: 420px;
+    }
+
+    .hola p{
+        font-size: 0.7rem;
+        width: 80px;
+    }
+
+    .img-i{
+        width: 470px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        height: 90%;
+        gap: 60px;
+    }
+
+    .texto{
+        width: 600px;
+    }
+
+    h1{
+        font-size: 3.2rem;
+        width: 650px;
+    }
+
+    .Lorem{
+        font-size: 1.2rem;
+        width: 400px;
+    }
+
+    .img-i{
+        width: 470px;
+    }
 }
